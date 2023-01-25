@@ -1,23 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LandingTitle from './Components/LandingPage/LandingTitle';
+import InitialButton from './Components/LandingPage/InitialButton';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <LandingTitle txtColor='white'>WELCOME TO DMM...</LandingTitle>
+        <InitialButton bgColor='white' txtColor='#849cca' mrSize='5px' pdSize='10px'>events</InitialButton>
       </header>
     </div>
   );
