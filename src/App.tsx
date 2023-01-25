@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
-import LandingTitle from './Components/LandingPage/LandingTitle';
-import InitialButton from './Components/LandingPage/InitialButton';
+import LandingPage from './Components/LandingPage/LandingPage';
+import EventPage from './Components/EventPage/EventPage';
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <LandingTitle txtColor='white'>WELCOME TO DMM...</LandingTitle>
-        <InitialButton bgColor='white' txtColor='#849cca' mrSize='5px' pdSize='10px'>events</InitialButton>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<LandingPage />} />
+      <Route path='/events' element={<EventPage />}/>
+    </Routes>
   );
 }
 
