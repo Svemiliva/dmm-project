@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import LandingPage from './Components/LandingPage/LandingPage';
-import EventPage from './Components/EventPage/EventPage';
+import LandingPage from './pages/LandingPage';
+import EventPage from './pages/EventPage/EventPage';
 import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<LandingPage />} />
-      <Route path='/events' element={<EventPage />}/>
     </Routes>
   );
 }
