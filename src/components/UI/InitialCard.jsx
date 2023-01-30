@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 import "../../App.css"
 import {
   EuiButton,
@@ -8,7 +9,6 @@ import {
 } from '@elastic/eui';
 
 const InitialCard= () => (
-
    <div className='card'>
       <EuiCard 
         textAlign="left"   
@@ -24,7 +24,9 @@ const InitialCard= () => (
         footer={
           <EuiFlexGroup justifyContent="flexEnd">
             <EuiFlexItem grow={false}>
-              <EuiButton>Go for it</EuiButton>
+              <Link to={"/events"}>
+                <EuiButton>Go for it</EuiButton>
+              </Link>
             </EuiFlexItem>
           </EuiFlexGroup>
         }
