@@ -20,3 +20,11 @@
   background-color:  #849cca;
   color: white;
 }
+
+.card {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
